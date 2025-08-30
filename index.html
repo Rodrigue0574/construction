@@ -46,14 +46,6 @@
           <li><a href="about.html">QUI SOMMES NOUS</a></li>
           <li><a href="services.html">NOS SERVICES</a></li>
           <li><a href="projects.html">NOS REALISATIONS</a></li>         
-          <li class="dropdown"><a href="#"><span>Plus</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="careers.html">Carrières</a></li>
-              <li><a href="partners.html">Partenaires</a></li>
-              <li><a href="quality.html">Engagement qualité</a></li>
-              <li><a href="sustainability.html">Développement durable</a></li>
-            </ul>
-          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -115,153 +107,158 @@
 
     <!-- Get Started Section -->
     <section id="get-started" class="get-started section">
+  <div class="container">
 
-      <div class="container">
+    <div class="row justify-content-between gy-4">
 
-        <div class="row justify-content-between gy-4">
-
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-            <div class="content">
-              <h3>Votre projet de construction sur mesure</h3>
-              <p>A-CONSTRUCT vous accompagne dans toutes les étapes de votre projet, de l'étude de faisabilité à la livraison finale. Notre expertise technique et notre savoir-faire nous permettent de garantir des résultats à la hauteur de vos attentes.
-              </p>
-              <p>Bénéficiez de notre accompagnement personnalisé et de conseils d'experts pour concrétiser votre vision architecturale.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
-            <form action="forms/quote.php" method="post" class="php-email-form">
-              <h3>Demander un devis gratuit</h3>
-              <p>Notre équipe vous recontacte sous 24h pour étudier votre projet.</p>
-              <div class="row gy-3">
-
-                <div class="col-12">
-                  <input type="text" name="name" class="form-control" placeholder="Nom et prénom" required="">
-                </div>
-
-                <div class="col-12 ">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required="">
-                </div>
-
-                <div class="col-12">
-                  <input type="text" class="form-control" name="phone" placeholder="Téléphone" required="">
-                </div>
-                
-                <div class="col-12">
-                  <select class="form-control" name="project-type" required>
-                    <option value="" disabled selected>Type de projet</option>
-                    <option value="new-construction">Construction neuve</option>
-                    <option value="renovation">Rénovation</option>
-                    <option value="extension">Extension</option>
-                    <option value="refurbishment">Ravalement</option>
-                    <option value="other">Autre</option>
-                  </select>
-                </div>
-
-                <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Décrivez votre projet" required=""></textarea>
-                </div>
-
-                <div class="col-12 text-center">
-                  <div class="loading">Chargement</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Votre demande de devis a été envoyée avec succès. Merci!</div>
-
-                  <button type="submit">Envoyer la demande</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Quote Form -->
-
+      <!-- Texte d’introduction -->
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+        <div class="content">
+          <h3>Votre projet de construction ou d’aménagement sur mesure</h3>
+          <p>Chez A-CONSTRUCT, nous intervenons sur tous types de chantiers : bâtiments neufs, réhabilitations, infrastructures publiques, réseaux techniques et installations spécialisées.</p>
+          <p>Notre équipe vous accompagne de l’étude technique à la livraison finale, avec des solutions adaptées à vos besoins, vos contraintes et votre budget.</p>
         </div>
-
       </div>
 
-    </section><!-- /Get Started Section -->
+      <!-- Formulaire de devis -->
+      <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
+        <form action="forms/quote.php" method="post" class="php-email-form">
+          <h3>Demander un devis gratuit</h3>
+          <p>Notre équipe vous recontacte sous 24h pour étudier votre projet.</p>
+          <div class="row gy-3">
+
+            <div class="col-12">
+              <input type="text" name="name" class="form-control" placeholder="Nom et prénom" required>
+            </div>
+
+            <div class="col-12">
+              <input type="email" class="form-control" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="col-12">
+              <input type="text" class="form-control" name="phone" placeholder="Téléphone" required>
+            </div>
+
+            <div class="col-12">
+              <select class="form-control" name="project-type" required>
+                <option value="" disabled selected>Type de projet</option>
+                <option value="new-construction">Construction neuve</option>
+                <option value="building-rehabilitation">Réhabilitation de bâtiment</option>
+                <option value="public-works">Travaux publics / voirie</option>
+                <option value="vrd">Réseaux divers (VRD)</option>
+                <option value="high-voltage">Électricité haute tension</option>
+                <option value="pylons">Pylônes / shelters</option>
+                <option value="industrial">Travaux industriels</option>
+                <option value="technical-installations">Installations techniques (plomberie, sécurité, etc.)</option>
+                <option value="other">Autre</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Décrivez votre projet en quelques lignes" required></textarea>
+            </div>
+
+            <div class="col-12 text-center">
+              <div class="loading">Chargement</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Votre demande de devis a été envoyée avec succès. Merci!</div>
+
+              <button type="submit">Envoyer la demande</button>
+            </div>
+
+          </div>
+        </form>
+      </div><!-- End Quote Form -->
+
+    </div>
+
+  </div>
+</section><!-- /Get Started Section -->
 
     <!-- Constructions Section -->
     <section id="constructions" class="constructions section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Nos Domaines d'Expertise</h2>
-        <p>Des compétences variées pour répondre à tous vos besoins en construction et rénovation</p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Nos Domaines d'Expertise</h2>
+    <p>Des pôles techniques complémentaires pour répondre aux enjeux du BTP, des infrastructures et des installations spécialisées</p>
+  </div><!-- End Section Title -->
 
-      <div class="container">
+  <div class="container">
+    <div class="row gy-4">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/constructions-1.jpg" alt="Construction neuve"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Construction Neuve</h4>
-                    <p>Réalisation de maisons individuelles, bâtiments résidentiels et locaux commerciaux sur-mesure, respectant les normes en vigueur et les dernières innovations techniques.</p>
-                  </div>
-                </div>
+      <!-- Construction & Réhabilitation -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="assets/img/constructions-1.jpg" alt="Bâtiments neufs et réhabilitation"></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Construction & Réhabilitation</h4>
+                <p>Réalisation de bâtiments neufs ou rénovation tous corps d’état, avec maîtrise des normes, des délais et des contraintes techniques spécifiques.</p>
               </div>
             </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/constructions-2.jpg" alt="Rénovation"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Rénovation et Réhabilitation</h4>
-                    <p>Transformation et modernisation de bâtiments existants avec une approche respectueuse du patrimoine et une expertise technique pointue pour améliorer performance énergétique et confort.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/constructions-3.jpg" alt="Extension"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Extensions et Surélévations</h4>
-                    <p>Agrandissement de votre habitat par extension ou surélévation, avec une intégration harmonieuse dans l'existant et le respect des règles d'urbanisme.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/constructions-4.jpg" alt="Ravalement"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Ravalement et Isolation</h4>
-                    <p>Ravalement de façades avec solutions d'isolation thermique par l'extérieur pour améliorer l'esthétique et les performances énergétiques de votre bâtiment.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
+          </div>
         </div>
+      </div><!-- End Card Item -->
 
-      </div>
+      <!-- Travaux Publics & VRD -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="assets/img/constructions-3.jpg" alt="Travaux publics et réseaux divers"></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Travaux Publics & Réseaux Divers</h4>
+                <p>Aménagements extérieurs, voiries, réseaux d’assainissement, d’eau, d’électricité et de télécommunication, avec expertise en hydraulique et VRD.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
 
-    </section><!-- /Constructions Section -->
+      <!-- Pylônes & Structures Métalliques -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="assets/img/constructions-2.jpg" alt="Pylônes et structures techniques"></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Pylônes & Structures Techniques</h4>
+                <p>Montage, réhabilitation et sécurisation de pylônes de télécommunication, shelters et infrastructures métalliques spécifiques.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+
+      <!-- Installations Techniques & Sécurité -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="assets/img/WhatsApp Image 2025-08-28 at 17.14.51 (1).jpeg" alt="Installations techniques et sécurité"></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Installations Techniques & Sécurité</h4>
+                <p>Électricité HT/BT, plomberie, systèmes de sécurité et domotique, avec intégration sur-mesure dans les bâtiments résidentiels ou techniques.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+
+    </div>
+  </div>
+
+</section><!-- /Constructions Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section light-background">
@@ -335,34 +332,8 @@
         </div>
       </div>
 
-      <!-- Suivi & Contrôle de Travaux -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
-        <div class="service-item position-relative">
-          <div class="icon"><i class="fa-solid fa-clipboard-check"></i></div>
-          <h3>Suivi & Contrôle</h3>
-          <p>Assistance à maîtrise d’ouvrage, contrôle qualité, audits techniques et reporting de chantier.</p>
-          <a href="#" class="readmore stretched-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
+     
 
-      <!-- Électricité, Plomberie & Sécurité -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
-        <div class="service-item position-relative">
-          <div class="icon"><i class="fa-solid fa-tools"></i></div>
-          <h3>Électricité, Plomberie & Sécurité</h3>
-          <p>Installation de réseaux électriques basse tension, plomberie sanitaire et systèmes de sécurité intégrés.</p>
-          <a href="#" class="readmore stretched-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-      <!-- Études Techniques & Ingénierie -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
-        <div class="service-item position-relative">
-          <div class="icon"><i class="fa-solid fa-drafting-compass"></i></div>
-          <h3>Études Techniques & Ingénierie</h3>
-          <p>Conception, dimensionnement et modélisation des projets avec plans d’exécution, calculs structurels et simulations techniques.</p>
-          <a href="#" class="readmore stretched-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
 
     </div>
   </div>
@@ -522,22 +493,25 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Tous</li>
+            <!--
+            <li data-filter="*" class="filter-active">Tous nos réalisations</li>  
             <li data-filter=".filter-construction">Construction Neuve</li>
             <li data-filter=".filter-renovation">Rénovation</li>
             <li data-filter=".filter-extension">Extension</li>
             <li data-filter=".filter-commercial">Locaux Commerciaux</li>
+            -->
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construction">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/construction-1.jpg" class="img-fluid" alt="Maison contemporaine">
+                <img src="assets/img/WhatsApp Image 2025-08-28 at 17.14.46 (5).JPEG" class="img-fluid" alt="Maison contemporaine">
                 <div class="portfolio-info">
+                  <!--
                   <h4>Maison contemporaine</h4>
-                  <p>Essonne, France</p>
-                  <a href="assets/img/projects/construction-1.jpg" title="Maison contemporaine" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <p>Essonne, France</p> -->
+                  <a href="assets/img/WhatsApp Image 2025-08-28 at 17.14.47 (1).jpeg" title="Maison contemporaine" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -545,10 +519,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-renovation">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/renovation-1.jpg" class="img-fluid" alt="Rénovation appartement">
+                <img src="assets/img/WhatsApp Image 2025-08-28 at 17.14.47 (2).jpeg" class="img-fluid" alt="Rénovation appartement">
                 <div class="portfolio-info">
+                  <!--
                   <h4>Rénovation appartement</h4>
-                  <p>Paris, France</p>
+                  <p>Paris, France</p> -->
                   <a href="assets/img/projects/renovation-1.jpg" title="Rénovation appartement" data-gallery="portfolio-gallery-renovation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -557,11 +532,12 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-extension">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/extension-1.jpg" class="img-fluid" alt="Extension maison">
+                <img src="assets/img/WhatsApp Image 2025-08-28 at 17.14.47 (3).jpeg" class="img-fluid" alt="Extension maison">
                 <div class="portfolio-info">
+                  <!--
                   <h4>Extension maison</h4>
-                  <p>Yvelines, France</p>
-                  <a href="assets/img/projects/extension-1.jpg" title="Extension maison" data-gallery="portfolio-gallery-extension" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <p>Yvelines, France</p> -->
+                  <a href="assets/img/WhatsApp Image 2025-08-28 at 17.14.47 (4).jpeg" title="Extension maison" data-gallery="portfolio-gallery-extension" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -569,11 +545,12 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-commercial">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/commercial-1.jpg" class="img-fluid" alt="Local commercial">
+                <img src="assets/img/WhatsApp Image 2025-08-28 at 17.14.48 (1).jpeg" class="img-fluid" alt="Local commercial">
                 <div class="portfolio-info">
+                  <!--
                   <h4>Local commercial</h4>
-                  <p>Lyon, France</p>
-                  <a href="assets/img/projects/commercial-1.jpg" title="Local commercial" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <p>Lyon, France</p> -->
+                  <a href="assets/img/WhatsApp Image 2025-08-28 at 17.14.50.jpeg" title="Local commercial" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -581,10 +558,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construction">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/construction-2.jpg" class="img-fluid" alt="Maison traditionnelle">
+                <img src="assets/img/WhatsApp Image 2025-08-28 at 17.14.51 (1).jpeg" class="img-fluid" alt="Maison traditionnelle">
                 <div class="portfolio-info">
+                  <!--
                   <h4>Maison traditionnelle</h4>
-                  <p>Loiret, France</p>
+                  <p>Loiret, France</p> -->
                   <a href="assets/img/projects/construction-2.jpg" title="Maison traditionnelle" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -593,11 +571,12 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-renovation">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/renovation-2.jpg" class="img-fluid" alt="Rénovation complète">
+                <img src="assets/img/WhatsApp Image 2025-08-28 at 17.14.46 (2).jpeg" class="img-fluid" alt="Rénovation complète">
                 <div class="portfolio-info">
+                  <!--
                   <h4>Rénovation complète</h4>
-                  <p>Hauts-de-Seine, France</p>
-                  <a href="assets/img/projects/renovation-2.jpg" title="Rénovation complète" data-gallery="portfolio-gallery-renovation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <p>Hauts-de-Seine, France</p> -->
+                  <a href="assets/img/WhatsApp Image 2025-08-28 at 17.14.51 (1).jpeg" title="Rénovation complète" data-gallery="portfolio-gallery-renovation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="Plus de détails" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -760,10 +739,10 @@
             <span class="sitename">ConstructPlus</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>123 Avenue de la Construction</p>
-            <p>75000 Paris, France</p>
-            <p class="mt-3"><strong>Téléphone:</strong> <span>+33 1 23 45 67 89</span></p>
-            <p><strong>Email:</strong> <span>contact@constructplus.fr</span></p>
+            <p>Cocody, Abidjan, Côte d'Ivoire</p>
+            <p>04 Bp1050 ABJ 04, Abidjan</p>
+            <p class="mt-3"><strong>Téléphone:</strong> <span>(+225)0757939366</span></p>
+            <p><strong>Email:</strong> <span>contact@a-construct.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -784,25 +763,16 @@
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nos Services</h4>
-          <ul>
-            <li><a href="services.html">Construction neuve</a></li>
-            <li><a href="services.html">Rénovation</a></li>
-            <li><a href="services.html">Extension</a></li>
-            <li><a href="services.html">Ravalement</a></li>
-            <li><a href="services.html">Aménagement intérieur</a></li>
-          </ul>
-        </div>
+        
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Informations légales</h4>
           <ul>
+            
             <li><a href="terms.html">Conditions d'utilisation</a></li>
             <li><a href="privacy.html">Politique de confidentialité</a></li>
-            <li><a href="cookies.html">Politique des cookies</a></li>
             <li><a href="legal.html">Mentions légales</a></li>
-            <li><a href="sitemap.html">Plan du site</a></li>
+           
           </ul>
         </div>
 
@@ -821,10 +791,8 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">ConstructPlus</strong> <span>Tous droits réservés</span></p>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">A-construct</strong> <span>Tous droits réservés</span></p>
+      
     </div>
 
   </footer>
